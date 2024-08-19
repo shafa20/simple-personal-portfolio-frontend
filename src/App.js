@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-import ApiData from './ApiData';
-import ProductList from './components/ProductList';
 import { BrowserRouter , Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -16,7 +14,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
-        <ProductList />
+       
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
