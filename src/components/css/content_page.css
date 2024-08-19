@@ -1,0 +1,142 @@
+/* src/components/css/content_page.css */
+
+/* General styling for the content page */
+.content-page {
+   
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .content-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Styling for the form */
+  .content-page form {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .content-page form input,
+  .content-page form select,
+  .content-page form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .content-page form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .content-page form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the table */
+  .content-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .content-page table th,
+  .content-page table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .content-page table th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .content-page table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Styling for the action buttons */
+  .content-page table button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .content-page table .edit-button {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .content-page table .edit-button:hover {
+    background-color: #218838;
+  }
+  
+  .content-page table .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .content-page table .delete-button:hover {
+    background-color: #c82333;
+  }
+ /* src/components/css/content_page.css */
+
+/* Success message styling */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    text-align: center;
+    position: relative; /* Position relative to place the close button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .success-message span {
+    flex-grow: 1;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    color: #155724;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+  }
+  
+  .close-button:hover {
+    color: #721c24;
+  }
+  
