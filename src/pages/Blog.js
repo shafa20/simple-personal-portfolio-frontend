@@ -9,7 +9,7 @@ const Blog = () => {
   useEffect(() => {
     // Fetch blog posts from the backend
     const fetchBlogs = async () => {
-      const response = await axios.get('http://localhost:8000/api/contents?type=blog');
+      const response = await axios.get('http://127.0.0.1:8000/api/blogs');
       setBlogs(response.data.data);
     };
 
@@ -21,6 +21,7 @@ const Blog = () => {
   return (
     <div>
       <h2>Blog Page</h2>
+      <p>which content type is blog you will see those list here</p>
       <ul>
         {blogs.map(blog => (
           <li key={blog.id}>

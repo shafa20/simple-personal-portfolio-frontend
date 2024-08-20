@@ -29,16 +29,25 @@ const BlogDetails = () => {
   }
 
   if (blogs.length === 0) {
-    return <div>No blogs found</div>;
+    return (
+      <div>
+        <p>No blogs found.</p>
+        <p>Create content with type "blog" or </p>
+        <p>Go to Blog Page click the title of any blog then you can see blog details.</p>
+      </div>
+    );
   }
 
   return (
     <div>
       <h2>Blog Details</h2>
+     
       {blogs.map(blog => (
         <div key={blog.id}>
-          <h3>{blog.title}</h3>
-          <p>{blog.content}</p>
+          <h3>title : {blog.title}</h3>
+          <p>Content: {blog.content}</p>
+          <p>type : {blog.type}</p>
+          <p>status : {blog.status}</p>
         </div>
       ))}
     </div>

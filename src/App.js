@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter , Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Blog from './pages/Blog';
@@ -25,6 +26,7 @@ function App() {
           <Route path="/blog/:title" element={<BlogDetails />} />
           <Route path="/content" element={<ContentPage />} /> 
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
